@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: rgb(80, 124, 108);
+}
+
+$font-principal: "Times New Roman", Times, serif;
+
+.h3 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.h2 {
+    color: rgb(235, 172, 172);
+    margin-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+
+
+}
+
+.group {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}

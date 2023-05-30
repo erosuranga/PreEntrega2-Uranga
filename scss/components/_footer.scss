@@ -1,0 +1,21 @@
+.redes {
+    display: flex;
+    justify-content: center;
+    height: 55px;
+
+    &-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    &-icons {
+        padding: 15px;
+        font-weight: bold;
+    }
+}
+
+.footer {
+    margin-top: 35px;
+}
