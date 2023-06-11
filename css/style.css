@@ -8,7 +8,7 @@ ul {
 }
 
 body {
-  background-color: rgb(80, 124, 108);
+  background-color: rgb(41, 51, 47);
 }
 
 .h3 {
@@ -31,6 +31,16 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+.hr-gal {
+  width: 100%;
+  height: 1px;
+  border-color: black;
+  background-color: black;
+  border-style: solid;
+  padding: 1px;
+  margin-top: 10px;
+}
+
 .redes {
   display: flex;
   justify-content: center;
@@ -46,13 +56,16 @@ body {
   padding: 15px;
   font-weight: bold;
 }
+.redes-icons:hover {
+  font-size: 35px;
+}
 
 .footer {
   margin-top: 35px;
 }
 
 .header {
-  background-color: rgb(81, 122, 107);
+  background-color: rgb(41, 49, 46);
 }
 .header-titulo {
   color: white;
@@ -87,6 +100,31 @@ body {
   align-items: center;
 }
 
+@media (min-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    align-items: center;
+  }
+  .header-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 9px;
+  }
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-content: center;
+  }
+  .div-fondo {
+    height: 85vh;
+  }
+}
 .section-form {
   width: auto;
   display: flex;
@@ -108,6 +146,10 @@ body {
   font-size: large;
 }
 
+.controls:hover {
+  border: black;
+}
+
 .control-send {
   background-color: rgba(5, 63, 41, 0.233);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -118,6 +160,142 @@ body {
   box-shadow: 15px 13px 15px;
 }
 
+.control-send:hover {
+  border: black;
+}
+
+@media (min-width: 1000px) {
+  .section-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    box-shadow: none;
+  }
+  .controls {
+    width: 85%;
+  }
+  .control-send {
+    width: 50%;
+  }
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+@media (min-width: 1000px) {
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 200px;
+    margin-top: 200px;
+  }
+}
+.serv {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  padding: 25px;
+}
+.serv-b {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  padding: 25px;
+}
+.serv-p {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .serv {
+    display: flex;
+    flex-direction: row;
+    height: 75vh;
+    margin-left: 15vh;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .serv-article {
+    margin-bottom: 300px;
+  }
+  .serv-div {
+    width: 700px;
+  }
+  .serv-b {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 75vh;
+    margin-right: 17vh;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+  }
+  .serv-p {
+    display: initial;
+    font-size: large;
+    font-weight: bold;
+  }
+  .serv-hr {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+  }
+  .serv-imag {
+    width: 85%;
+    height: 100%;
+    object-fit: contain;
+    padding: 35px;
+    width: 70%;
+  }
+}
+.galeria-hr {
+  width: 100%;
+  height: 1px;
+  border-color: black;
+  background-color: black;
+  border-style: solid;
+  padding: 1px;
+  margin-top: 10px;
+}
+.galeria-cont {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+  gap: 35px;
+  padding: 10px;
+  margin-bottom: 7vh;
+  margin-top: 3vh;
+  background-image: linear-gradient(rgb(41, 51, 47), black, white);
+}
+.galeria-imag {
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  padding: 2px;
+}
+
+@media (min-width: 1000px) {
+  .galeria-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 75px;
+    margin-bottom: 150px;
+  }
+  .galeria-imag:hover {
+    width: 100%;
+    height: 100%;
+  }
+}
 .index-galeria {
   display: flex;
   flex-direction: column;
@@ -139,4 +317,126 @@ body {
   background-size: contain;
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media (min-width: 1000px) {
+  .index-galeria {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+  }
+  .index-contenedor {
+    height: 350px;
+    width: auto;
+  }
+  .index-texto {
+    margin-right: 25px;
+    font-size: large;
+  }
+}
+.span {
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  margin-left: 35px;
+}
+
+.nos-article {
+  padding: 5px;
+}
+.nos-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nos-gal {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+}
+.nos-contenedor {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nos-predio {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 3vh;
+}
+.nos-servicios {
+  margin-left: 15px;
+  margin-bottom: 3vh;
+  margin-top: 2vh;
+  justify-content: space-between;
+}
+.nos-li {
+  padding: 7px;
+}
+.nos-icons {
+  padding: 15px;
+  font-weight: bold;
+}
+
+.p {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .nos-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .nos-gal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nos-contenedor {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .nos-predio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+  .nos-servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
+  }
+  .nos-li {
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .nos-icons {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .p {
+    width: 50%;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: initial;
+    font-size: x-large;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

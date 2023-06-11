@@ -20,5 +20,25 @@
         height: 25vh;
         width: auto;
         background-size: contain;
+    }}
+
+    @media (min-width:1000px) {
+        .index {
+            &-galeria {
+                display: flex;
+                flex-direction: row;
+                height: auto;
+                align-items: center;
+            }
+
+            &-contenedor {
+                height: 350px;
+                width: auto;
+            }
+
+            &-texto {
+                margin-right: 25px;
+                font-size: large;
+            }
+        }
     }
-}

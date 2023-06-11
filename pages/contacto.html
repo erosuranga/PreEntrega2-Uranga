@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>GARDENgroup</title>
+    <meta name="description" content="contactar a garden group|telefono de garden group| ubicacion de garden group">
+    <meta name="keywords" content="telefono, ubicacion, garden group, contacto">
 </head>
 
 <body class="body">
@@ -27,7 +33,7 @@
         <div class="div-fondo"></div>
     </main>
     <article>
-        <ul class="nos-predio">
+        <ul class="contacto">
             <li class="nos-icons"><i class="bi bi-telephone"></i>
                 <p>XXXX- XXXXXX</p>
             </li>
@@ -37,27 +43,41 @@
             <li class="nos-icons"><i class="bi bi-geo-alt"></i>
                 <p>Dorrego XXX</p>
             </li>
-            
-    </article >
-    <footer class="footer">
+
+    </article>
+    <h3 class="h3">Contactanos</h3>
+    <section class="section-form">
+        <input class="controls" type="text" name="nombre" placeholder="Nombre">
+        <input class="controls" type="text" name="apellido" placeholder="Apellido">
+        <input class="controls" type="text" name="telefono" placeholder="Telefono">
+        <input class="controls" type="text" name="fecha" placeholder="Fecha del Evento">
+        <input class="controls" type="email" name="corre" placeholder="Correo Electronico">
+        <input class="control-send" type="submit" value="Enviar">
+
+
+    </section>
+    <footer data-aos="zoom-out" class="footer">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12703.241887796394!2d-61.2637093!3d-37.252204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9594cb8f6e805543%3A0x4c517f403e12d31e!2sGarden%20Point%20-%20Gral.%20La%20Madrid!5e0!3m2!1ses-419!2sar!4v1683826630788!5m2!1ses-419!2sar"
             width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <h3 class="h3">Redes sociales</h3>
-        <div class="div-redes">
-            <ul class="redes">
-                <li class="nos-icons"><i class="bi bi-instagram"></i> </li>
-                <li class="nos-icons"><i class="bi bi-youtube"></i></li>
-                <li class="nos-icons"> <i class="bi bi-whatsapp"></i></li>
+        <div class="redes">
+            <ul class="redes-ul">
+                <li class="redes-icons"><i class="bi bi-instagram"></i> </li>
+                <li class="redes-icons"><i class="bi bi-youtube"></i></li>
+                <li class="redes-icons"> <i class="bi bi-whatsapp"></i></li>
             </ul>
         </div>
 
 
     </footer>
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
