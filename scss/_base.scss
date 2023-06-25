@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0%;
     padding: 0;
 }
 
@@ -9,6 +9,7 @@ ul {
 
 body {
     background-color: rgb(41, 51, 47);
+    overflow-x: hidden;
 }
 
 $font-principal: "Times New Roman", Times, serif;
